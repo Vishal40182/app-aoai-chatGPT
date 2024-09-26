@@ -41,7 +41,7 @@ class _UiSettings(BaseSettings):
         env_ignore_empty=True
     )
 
-    title: str = "Contoso"
+    title: str = "ONGC"
     logo: Optional[str] = None
     chat_logo: Optional[str] = None
     chat_title: str = "Start chatting"
@@ -821,8 +821,8 @@ class _AppSettings(BaseModel):
                 logging.debug("Using Mongo DB")
                 
             else:
-                self.datasource = None
-                logging.warning("No datasource configuration found in the environment -- calls will be made to Azure OpenAI without grounding data.")
+                self.datasource = "AzureCognitiveSearch"
+                logging.warning("Setting default to Azure vector search...")
                 
             return self
 

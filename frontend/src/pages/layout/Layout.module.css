@@ -17,14 +17,14 @@
 .headerTitleContainer {
   display: flex;
   align-items: center;
-  margin-left: 14px;
+  margin-left: -15px;
   text-decoration: none;
 }
 
 .headerTitle {
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 36px;
   line-height: 28px;
   display: flex;
   align-items: flex-end;
@@ -32,7 +32,7 @@
 }
 
 .headerIcon {
-  height: 32px;
+  height: 46px;
   width: auto;
   margin-left: 36px;
 }
